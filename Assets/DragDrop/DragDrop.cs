@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class DragDrop : MonoBehaviour
@@ -8,6 +9,8 @@ public class DragDrop : MonoBehaviour
     public LayerMask draggableLayer;
     public LayerMask gridLayer;
     public float snapThreshold = 0.5f; // Adjust as needed for the snapping distance
+
+    //public static event Action OnDefenseDeployed;
 
     void Start()
     {
@@ -30,6 +33,10 @@ public class DragDrop : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             isDragging = false;
+            
+            //Start the shooting or whatever mechanism
+
+
         }
 
         if (isDragging)
