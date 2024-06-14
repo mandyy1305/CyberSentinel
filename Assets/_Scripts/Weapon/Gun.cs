@@ -21,6 +21,8 @@ public class Gun : Weapon
 
     private void Shoot()
     {
-        Instantiate(m_BulletPrefab, m_FirePoint.position, m_FirePoint.rotation);
+        GameObject bulletSpawned = Instantiate(m_BulletPrefab, m_FirePoint.position, m_FirePoint.rotation);
+        Bullet bullet = bulletSpawned.GetComponent<Bullet>();
+        bullet.SetDamage(damage);
     }
 }
