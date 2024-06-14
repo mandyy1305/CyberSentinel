@@ -5,19 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Antivirus
-<<<<<<< Updated upstream
   - End
-=======
   - Tile
->>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Draggable
   - Water
   - UI
-  - 
+  - Grid
   - 
   - 
   - 
