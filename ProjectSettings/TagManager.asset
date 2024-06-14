@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Antivirus
+  - End
   layers:
   - Default
   - TransparentFX

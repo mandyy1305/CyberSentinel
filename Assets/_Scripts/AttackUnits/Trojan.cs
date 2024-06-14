@@ -16,30 +16,8 @@ public class Trojan : Enemy
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        MoveTowardsTarget();
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if(collision != null && collision.gameObject.transform.CompareTag(TARGET_TAG)) 
-        {
-            if(Vector2.Distance(transform.position, target.position) < distanceBeforeSwitch)
-            {
-                GetComponent<SpriteRenderer>().sprite = targetSprite;    
-            }
-        }   
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision != null)
-        {
-            if(collision.transform.TryGetComponent(out IDamageable damageable))
-            {
-                damageable.TakeDamage(damageGiven);
-            }
-        }
+        base.Update();
     }
 }

@@ -4,14 +4,42 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float movementSpeed;
-    public Transform target;
-    public float damageGiven;
-    public void MoveTowardsTarget()
-    {
-        if(target == null) return;
+    [SerializeField] protected float movementSpeed;
+    //[SerializeField] protected Transform target;
+    [SerializeField] protected float damage;
 
-        transform.position = Vector3.MoveTowards(transform.position, target.position, movementSpeed * Time.deltaTime);
+    protected void MoveTowardsLeft()
+    {
+        //if(target == null) return;
+
+        //transform.position = Vector3.MoveTowards(transform.position, target.position, movementSpeed * Time.deltaTime);
+
+        transform.position += Vector3.left * movementSpeed * Time.deltaTime;
     }
+
+    protected virtual void Update()
+    {
+        MoveTowardsLeft();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.TryGetComponent(out IDamageable damageable))
+        {
+            damageable.TakeDamage(damage);
+        }
+        DestroyGO();
+
+        if (collision.transform.CompareTag("End"))
+        {
+            DestroyGO();
+        }
+
+    }
+
+    protected void DestroyGO()
+    {
+        Destroy(gameObject);
+    }    
 
 }
