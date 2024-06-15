@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourcesContained: 10
-  movementSpeed: 2.5
+  movementSpeed: 1.5
 --- !u!61 &1056394749414848054
 BoxCollider2D:
   m_ObjectHideFlags: 0

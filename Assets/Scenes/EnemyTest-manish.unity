@@ -1681,6 +1681,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2134016954670254431, guid: f027e3935bc2d424b87a6c1584b86e5d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 34.100098
+      objectReference: {fileID: 0}
     - target: {fileID: 3865719269302812266, guid: f027e3935bc2d424b87a6c1584b86e5d, type: 3}
       propertyPath: m_Name
       value: ResourcesCanvas
@@ -1688,6 +1692,10 @@ PrefabInstance:
     - target: {fileID: 4352922469142577788, guid: f027e3935bc2d424b87a6c1584b86e5d, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541432766090102416, guid: f027e3935bc2d424b87a6c1584b86e5d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 34.100098
       objectReference: {fileID: 0}
     - target: {fileID: 7709055515953946427, guid: f027e3935bc2d424b87a6c1584b86e5d, type: 3}
       propertyPath: m_IsActive
@@ -2006,7 +2014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3319820538440143861, guid: a47b34fd846b2314d8171d78d0547553, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.51
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3319820538440143861, guid: a47b34fd846b2314d8171d78d0547553, type: 3}
       propertyPath: m_LocalPosition.y

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5219260782826087476}
   - component: {fileID: 5345453985880434271}
   - component: {fileID: 1989445454281765146}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ransomware
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baa491c18d0abd343b0f5263e81d297c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2.5
+  movementSpeed: 1.5
   damage: 100
   isHidden: 0
 --- !u!61 &1989445454281765146
@@ -116,7 +116,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

@@ -12,7 +12,7 @@ public class Ransomware : Enemy
     }
     IEnumerator DelayedSpawn()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         GetComponent<SpriteRenderer>().enabled = true;
         delayed = true;
     }
