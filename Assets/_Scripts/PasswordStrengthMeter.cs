@@ -73,7 +73,7 @@ public class PasswordStrengthMeter : MonoBehaviour
 
     public void SendStrengthScore()
     {
-        OnPasswordStrengthChanged?.Invoke(score);
+        OnPasswordStrengthChanged?.Invoke(score*2);
         panel.transform.GetChild(0).gameObject.SetActive(false);
     }
 }

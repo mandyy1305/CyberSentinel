@@ -9,6 +9,7 @@ TagManager:
   - Tile
   - Defense
   - Panel
+  - Wall
   layers:
   - Default
   - TransparentFX

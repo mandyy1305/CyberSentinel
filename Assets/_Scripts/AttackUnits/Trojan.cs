@@ -20,7 +20,6 @@ public class Trojan : Enemy
         RaycastHit2D hit = Physics2D.CircleCast(transform.position, 1.0f, Vector2.left, Mathf.Infinity, m_TargetMask);
 
         isHidden = true;
-        m_SpriteRenderer.color = Color.white;
 
         if(hit.collider != null)
         {
@@ -42,7 +41,6 @@ public class Trojan : Enemy
             if (distanceToTarget < distanceBeforeSwitch)
             {
                 m_SpriteRenderer.sprite = targetSprite;
-                m_SpriteRenderer.color = Color.red;
                 isHidden = false;
             }
         }

@@ -6,16 +6,25 @@ public class Spyware : Enemy
 {
     void Start()
     {
-        isHidden = FindObjectOfType<IDS>() == null;
-
-        if (isHidden)
-            GetComponent<Collider2D>().isTrigger = true;
-        else GetComponent<Collider2D>().isTrigger = false;
+        
     }
 
     override protected void Update()
     {
         base.Update();
+
+        isHidden = FindObjectOfType<IDS>() == null;
+
+        if (isHidden)
+        {
+            GetComponent<Collider2D>().isTrigger = true;
+            GetComponentInChildren<SpriteRenderer>().color = new Color(1, 1, 1, 0.2f);
+        }
+        else
+        {
+            GetComponent<Collider2D>().isTrigger = false;
+            GetComponentInChildren<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+        }
     }
 
 

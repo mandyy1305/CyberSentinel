@@ -134,6 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   healthbar: {fileID: 0}
+  cost: 0
 --- !u!61 &1855526203618173092
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -217,10 +218,6 @@ PrefabInstance:
     - target: {fileID: 2680133307674020649, guid: 3a19c8bc75828d94db92949c4aca31fc, type: 3}
       propertyPath: m_Layer
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3323364814638852492, guid: 3a19c8bc75828d94db92949c4aca31fc, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4472834429181803470, guid: 3a19c8bc75828d94db92949c4aca31fc, type: 3}
       propertyPath: m_Sprite

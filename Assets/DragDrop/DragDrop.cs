@@ -49,6 +49,8 @@ public class DragDrop : MonoBehaviour
 
             if(isClicked) {
                 Instantiate(correspondingGamobject, transform.position, Quaternion.Euler(0f, 180f, 0f));
+                defensePanel.SetActive(false);
+
                 Destroy(gameObject);
             }
 
