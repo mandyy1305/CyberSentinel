@@ -10,8 +10,6 @@ public class Trojan : Enemy
 
     public Transform target;
 
-    public bool isHidden;
-
     [SerializeField] private LayerMask m_TargetMask;
 
     [SerializeField] private SpriteRenderer m_SpriteRenderer;
@@ -19,7 +17,7 @@ public class Trojan : Enemy
     // Start is called before the first frame update
     void Start()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position + (Vector3) Vector2.left, Vector2.left, Mathf.Infinity, m_TargetMask);
+        RaycastHit2D hit = Physics2D.CircleCast(transform.position, 1.0f, Vector2.left, Mathf.Infinity, m_TargetMask);
 
         isHidden = true;
         m_SpriteRenderer.color = Color.white;

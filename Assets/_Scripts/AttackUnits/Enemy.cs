@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour
     //[SerializeField] protected Transform target;
     [SerializeField] protected float damage;
 
+    public bool isHidden;
+
     protected void MoveTowardsLeft()
     {
         //if(target == null) return;

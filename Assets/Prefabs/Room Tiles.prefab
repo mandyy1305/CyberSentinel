@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3732875090477005804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: combineWall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6349280996258474}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: combineWall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4259451095812073931}
   - component: {fileID: 4308475434716280334}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SquareVent (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566987976190004942}
   - component: {fileID: 941147374194794552}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ThreeLinedTile (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3505154840348001788}
   - component: {fileID: 2114419382551187068}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ThreeLinedTile (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3160849831776764577}
   - component: {fileID: 7097274385367243926}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SquareVent (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4824796684772708325}
   - component: {fileID: 6183003573147241563}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Goo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3877237344318282202}
   - component: {fileID: 8027351824859741928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ThreeLinedTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -576,7 +576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5136720230256008525}
   - component: {fileID: 9053531134720302104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SquareVent (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -660,7 +660,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2798409030807488735}
   - component: {fileID: 2442468527234788409}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SquareVent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -743,7 +743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6943770481344647171}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: combineWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -775,7 +775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5406316690283710847}
   - component: {fileID: 8522274111257844822}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StraightVent (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -859,7 +859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4038121505519137197}
   - component: {fileID: 199609917297876117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StraightVent (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -943,7 +943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2506286424323979581}
   - component: {fileID: 5033733766587842450}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StraightVent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,7 +1027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7775250745091946795}
   - component: {fileID: 4384587682475162187}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ThreeLinedTile (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1110,7 +1110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 716419884772782030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Room Tiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1465,7 +1465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6745930387417728699}
   - component: {fileID: 1170701814495491263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StraightVent (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1549,7 +1549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1675190251466667328}
   - component: {fileID: 4934858727819285426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Goo (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1633,7 +1633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2441038703894031955}
   - component: {fileID: 5589433409010036599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SquareVent (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1717,7 +1717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9040064148104469551}
   - component: {fileID: 2805357042463802274}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StraightVent (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1801,7 +1801,7 @@ GameObject:
   m_Component:
   - component: {fileID: 534863437350087199}
   - component: {fileID: 6729159293987380550}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SquareVent (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1885,7 +1885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1423815185804781702}
   - component: {fileID: 6879548140341259151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SquareVent (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1969,7 +1969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2597325145240282773}
   - component: {fileID: 5302383492239923955}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StraightVent (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2053,7 +2053,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1503611223249106045}
   - component: {fileID: 1632450983560442382}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ThreeLinedTile (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2137,7 +2137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7260934341725957376}
   - component: {fileID: 3280535525122961104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Goo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6069,7 +6069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 975817183951442120, guid: befa211aca3b5ca46ae7703598df3296, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.04
+      value: -0.02135181
       objectReference: {fileID: 0}
     - target: {fileID: 975817183951442120, guid: befa211aca3b5ca46ae7703598df3296, type: 3}
       propertyPath: m_LocalPosition.z
