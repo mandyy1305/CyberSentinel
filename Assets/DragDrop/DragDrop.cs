@@ -1,8 +1,16 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DragDrop : MonoBehaviour
 {
+    public GameObject[] inventorySprites;
+    public GameObject[] dragDropPrefabs;
+
+    private GameObject clickedSprite;
+
+    private Dictionary<GameObject, GameObject> sprites;
+
     private bool isDragging = false;
     private Vector3 offset;
     private Camera mainCamera;
@@ -14,7 +22,12 @@ public class DragDrop : MonoBehaviour
 
     void Start()
     {
+        sprites = new Dictionary<GameObject, GameObject>();
         mainCamera = Camera.main;
+        for (int i = 0; i < inventorySprites.Length; i++)
+        {
+            sprites.Add(inventorySprites[i], dragDropPrefabs[i]);
+        }
     }
 
     void Update()
@@ -27,15 +40,16 @@ public class DragDrop : MonoBehaviour
             {
                 offset = transform.position - GetMouseWorldPosition();
                 isDragging = true;
+                clickedSprite = gameObject;
             }
         }
 
         if (Input.GetMouseButtonUp(0))
         {
             isDragging = false;
-            
             //Start the shooting or whatever mechanism
-
+            Instantiate(sprites[clickedSprite], transform.position, Quaternion.Euler(0f, 180f, 0f));
+            Destroy(gameObject);
 
         }
 
