@@ -4,20 +4,49 @@ using UnityEngine;
 
 public class Trojan : Enemy
 {
-   
-    public string TARGET_TAG = "Antivirus";
     public float distanceBeforeSwitch = 3.0f;
+    public float distanceToTarget;
     public Sprite targetSprite;
 
+    public Transform target;
+
+    public bool isHidden;
+
+    [SerializeField] private LayerMask m_TargetMask;
+
+    [SerializeField] private SpriteRenderer m_SpriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position + (Vector3) Vector2.left, Vector2.left, Mathf.Infinity, m_TargetMask);
+
+        isHidden = true;
+        m_SpriteRenderer.color = Color.white;
+
+        if(hit.collider != null)
+        {
+            if(hit.transform.TryGetComponent(out DefenceUnit defenceUnit))
+            {
+                target = defenceUnit.transform;
+            }
+        }
     }
 
     // Update is called once per frame
     protected override void Update()
     {
         base.Update();
+
+        if (target != null)
+        {
+            distanceToTarget = Vector3.Distance(transform.position, target.position);
+            if (distanceToTarget < distanceBeforeSwitch)
+            {
+                m_SpriteRenderer.sprite = targetSprite;
+                m_SpriteRenderer.color = Color.red;
+                isHidden = false;
+            }
+        }
     }
 }

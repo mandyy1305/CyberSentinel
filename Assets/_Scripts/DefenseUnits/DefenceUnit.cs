@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class DefenceUnit : MonoBehaviour, IDamageable
 {
-    [SerializeField] protected float health;
+    [SerializeField] protected float maxHealth;
+    protected float health;
 
-    public void TakeDamage(float damage)
+    [SerializeField] protected Healthbar healthbar;
+
+    protected void Start()
+    {
+        health = maxHealth;
+        healthbar = GetComponentInChildren<Healthbar>();
+        healthbar.SetHealth(health / maxHealth);
+    }
+
+    public virtual void TakeDamage(float damage)
     {
         health -= damage;
+
+        healthbar.SetHealth(health / maxHealth);
 
         if (health <= 0)
             Die();
