@@ -9,6 +9,8 @@ public class DefenceUnit : MonoBehaviour, IDamageable
 
     [SerializeField] protected Healthbar healthbar;
 
+    [SerializeField] protected int cost;
+
     protected void Start()
     {
         health = maxHealth;
