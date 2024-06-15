@@ -1,16 +1,16 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DragDrop : MonoBehaviour
 {
-    public GameObject[] inventorySprites;
-    public GameObject[] dragDropPrefabs;
+    public GameObject correspondingGamobject;
 
-    private GameObject clickedSprite;
+    public GameObject defensePanel;
+    public GameObject attackPanel;
 
-    private Dictionary<GameObject, GameObject> sprites;
-
+    private bool isClicked = false;
     private bool isDragging = false;
     private Vector3 offset;
     private Camera mainCamera;
@@ -18,16 +18,13 @@ public class DragDrop : MonoBehaviour
     public LayerMask gridLayer;
     public float snapThreshold = 0.5f; // Adjust as needed for the snapping distance
 
+    [TextArea(3,5)]
+    public string description;
     //public static event Action OnDefenseDeployed;
 
     void Start()
     {
-        sprites = new Dictionary<GameObject, GameObject>();
         mainCamera = Camera.main;
-        for (int i = 0; i < inventorySprites.Length; i++)
-        {
-            sprites.Add(inventorySprites[i], dragDropPrefabs[i]);
-        }
     }
 
     void Update()
@@ -40,7 +37,8 @@ public class DragDrop : MonoBehaviour
             {
                 offset = transform.position - GetMouseWorldPosition();
                 isDragging = true;
-                clickedSprite = gameObject;
+                isClicked = true;
+                Instantiate(gameObject, transform.position, transform.rotation, transform.parent);
             }
         }
 
@@ -48,8 +46,11 @@ public class DragDrop : MonoBehaviour
         {
             isDragging = false;
             //Start the shooting or whatever mechanism
-            Instantiate(sprites[clickedSprite], transform.position, Quaternion.Euler(0f, 180f, 0f));
-            Destroy(gameObject);
+
+            if(isClicked) {
+                Instantiate(correspondingGamobject, transform.position, Quaternion.Euler(0f, 180f, 0f));
+                Destroy(gameObject);
+            }
 
         }
 
@@ -81,4 +82,18 @@ public class DragDrop : MonoBehaviour
         }
         return currentPosition;
     }
+
+    private void OnMouseEnter()
+    {
+        defensePanel.SetActive(true);
+        attackPanel.SetActive(false);
+
+        defensePanel.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = description;
+    }
+
+    private void OnMouseExit()
+    {
+        defensePanel.SetActive(false);
+    }
+
 }
